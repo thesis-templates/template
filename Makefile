@@ -10,7 +10,8 @@ pkgs:
 	pandoc-citeproc-preamble pandoc-plantuml-filter
 
 doc: data
-	pandoc --citeproc \
+	pandoc \
+	--filter pandoc-citeproc \
 	--filter pandoc-plantuml \
 	--metadata-file ./meta.yml \
 	-o doc.pdf \

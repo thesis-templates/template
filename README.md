@@ -1,1 +1,1 @@
-# Tehsis Template
+# Thesis Template

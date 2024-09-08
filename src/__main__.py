@@ -1,5 +1,5 @@
 def main():
-    print("thesis")
+    print("Thesis Template")
 
 if __name__ == "__main__":
     main()

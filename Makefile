@@ -16,4 +16,4 @@ doc: data
 	./thesis/thesis.md
 
 data:
-	python3 .
+	@python3 src

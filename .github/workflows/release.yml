@@ -19,7 +19,10 @@ jobs:
         run: make doc
 
       - name: Update Release
-        uses: johnwbyrd/update-release@latest
+        uses: marvinpinto/action-automatic-release@latest
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: "latest"
+          prerelease: true
+          title: "Document PDF"
           files: doc.pdf

@@ -19,7 +19,7 @@ jobs:
         run: make doc
 
       - name: Update Release
-        uses: johnwbyrd/update-release@v1
+        uses: johnwbyrd/update-release@latest
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           files: doc.pdf

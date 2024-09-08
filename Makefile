@@ -4,10 +4,8 @@ all:
 	@echo "  pkgs : Install packages in Debian/Ubuntu"
 
 pkgs:
-	sudo apt install -y pandoc \
-	texlive-latex-base texlive-latex-extra \
-	texlive-fonts-recommended texlive-fonts-extra \
-	pandoc-citeproc-preamble pandoc-plantuml-filter
+	sudo apt update -y
+	sudo apt install -y $(cat apt-packages.txt)
 
 doc: data
 	pandoc \

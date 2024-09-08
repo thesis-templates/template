@@ -18,11 +18,10 @@ jobs:
       - name: Create Document PDF
         run: make doc
 
-      - name: Update Release
-        uses: marvinpinto/action-automatic-releases@latest
+      - name: Update Document PDF
+        uses: actions/upload-release-asset@v1
         with:
-          repo_token: "${{ secrets.GITHUB_TOKEN }}"
-          automatic_release_tag: "latest"
-          prerelease: true
-          title: "Document PDF"
-          files: doc.pdf
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./path/to/doc.pdf
+          asset_name: doc.pdf
+          asset_content_type: application/pdf

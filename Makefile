@@ -5,7 +5,7 @@ all:
 
 pkgs:
 	sudo apt update -y
-	sudo apt install -y $(cat apt-packages.txt)
+	sudo apt install -y $(shell cat apt-packages.txt)
 
 doc: data
 	pandoc \

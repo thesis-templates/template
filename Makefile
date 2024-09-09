@@ -1,7 +1,7 @@
 all:
 	@echo "main [option]"
 	@echo "  doc  : Create doc.pdf"
-	@echo "  pkgs : Install packages in Debian/Ubuntu"
+	@echo "  pkgs : Install packages in Ubuntu"
 
 pkgs:
 	sudo apt update -y

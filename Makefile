@@ -1,7 +1,13 @@
 all:
 	@echo "main [option]"
-	@echo "  doc  : Create doc.pdf"
-	@echo "  pkgs : Install packages in Ubuntu"
+	@echo "  doc  : Make doc.pdf"
+	@echo "  pkgs : Install packages"
+	@echo "  save : Save changes"
+
+save:
+	git add .
+	git commit -m $(shell date -Iseconds)
+	git push origin main
 
 pkgs:
 	sudo apt update -y

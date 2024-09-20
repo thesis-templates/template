@@ -8,13 +8,14 @@ keywords: pandoc markdown thesis
 
 papersize: a4
 fontsize: 12pt
+mainfont: "Times New Roman"
 geometry: margin=2.5cm
 
 toc: true
 toc-title: "Index"
 
 bibliography: ./references.bib
-csl: ./format/apa7.csl
+csl: ./format/style.csl
 
 header-includes: |
   \def\thesis{Scientia potentia est!}

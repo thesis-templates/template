@@ -1,4 +1,5 @@
 \newpage
+
 # Thesis Template
 
 [\thesis](https://thesis.lat)

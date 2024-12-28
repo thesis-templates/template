@@ -1,1 +1,9 @@
 ./thesis/thesis.md
+./thesis/abstract.md
+./thesis/index.md
+./thesis/introduction.md
+./thesis/chapter-1.md
+./thesis/chapter-2.md
+./thesis/chapter-3.md
+./thesis/references.md
+./thesis/annexes.md

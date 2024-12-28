@@ -1,22 +1,39 @@
 ---
-title: Thesis Template
-author: Irving Montalvo
-date: Moon, 2024
-
-subject: Template with Markdown
-keywords: pandoc markdown thesis
-
 papersize: a4
 fontsize: 12pt
 mainfont: "Times New Roman"
 geometry: margin=2.5cm
 
-toc: true
-toc-title: "Index"
+linestretch: 1.5
+indent: 0.5in
 
 bibliography: ./references.bib
 csl: ./format/style.csl
 
 header-includes: |
-  \def\thesis{Scientia potentia est!}
+  \usepackage{ragged2e}
+  \usepackage{graphicx}
+
+  \usepackage{fancyhdr}
+
+  \addtocontents{toc}{\protect\thispagestyle{empty}}
+
+  \usepackage{csvsimple, longtable}
+  \newcommand\tsv[1]{\csvautolongtable[respect all, separator=tab]{#1.tsv}}
+
+  \newcounter{figures}
+  \newcommand\newfigure[2]{
+    \phantomsection\refstepcounter{figures}
+    \addcontentsline{lof}{subsection}{Figure \arabic{figures}. #2}
+    \centering
+    \textbf{Figure \arabic{figures}.}\label{#1}
+    \textit{#2}}
+
+  \newcounter{tables}
+  \newcommand\newtable[2]{
+    \phantomsection\refstepcounter{tables}
+    \addcontentsline{lot}{subsection}{Table \arabic{tables}. #2}
+    \centering
+    \textbf{Table \arabic{tables}}\label{#1}
+    \textit{#2}}
 ---

@@ -1,9 +1,9 @@
 {
-  "annus": 2024,
-  "patria": "vat",
-  "lingua": "lat",
-  "universitas": "www.thesis.lat",
-  "facultas": "thesis.lat/facultas",
-  "repositorium": "repositorium.thesis.lat/",
-  "descriptio": "Informatiō thesis"
+  "year": 2024,
+  "description": "Informatiō thesis",
+  "iso_country": "vat",
+  "iso_language": "lat",
+  "url_university": "https://thesis.lat/",
+  "url_school": "https://thesis.lat/",
+  "url_repository": "https://thesis.lat/"
 }

@@ -10,7 +10,7 @@
 
 \vspace{1cm}
 
-[www.thesis.lat](https://thesis.lat)
+[thesis.moixllik.com](https://thesis.moixllik.com)
 
 \vfill
 

@@ -21,7 +21,6 @@ pkgs:
 
 doc: data
 	@pandoc $(CITEPROC) \
-	--filter pandoc-plantuml \
 	-o doc.pdf \
 	./meta.yml \
 	$(shell cat ./thesis.txt)

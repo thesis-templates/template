@@ -1,3 +1,9 @@
+CITEPROC:=$(shell \
+if pandoc --help | grep -q -- '--citeproc'; \
+then echo "--citeproc"; \
+else echo "--filter pandoc-citeproc"; \
+fi)
+
 all:
 	@echo "main [option]"
 	@echo "  doc  : Make doc.pdf"
@@ -14,8 +20,8 @@ pkgs:
 	@sudo apt install -y $(shell cat ./apt-packages.txt)
 
 doc: data
-	@pandoc \
-	--filter pandoc-citeproc \
+	@pandoc $(CITEPROC) \
+	--filter pandoc-plantuml \
 	-o doc.pdf \
 	./meta.yml \
 	$(shell cat ./thesis.txt)

@@ -10,8 +10,6 @@
 
 \vspace{1cm}
 
-[thesis.moixllik.com](https://thesis.moixllik.com)
-
 \vfill
 
 2024
